@@ -117,6 +117,21 @@
   background-color:rgb(2, 203, 2, 0.8)
 }
 
+.background-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* 他の要素の裏に */
+  pointer-events: none;
+}
+
+
 .background-layer {
   position: fixed;
   top: 0;
@@ -144,7 +159,7 @@
   .nadhia {
     width: 200px;
     right: 10px;
-    bottom: 0px;
+    bottom: -10px;
 
     animation-duration: 4s;
   }
@@ -159,6 +174,8 @@
   </style>
 </head>
 <body>
+
+  <div class="background-fixed"></div>
 
 <div class="background-layer">
   <img src="nadhia.png" alt="ナディア" class="nadhia">
