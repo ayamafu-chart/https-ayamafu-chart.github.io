@@ -1,1 +1,1 @@
-# https-ayamafu-chart.github.io
+# https://ayamafu-chart.github.io/takumi-chart/index.html
